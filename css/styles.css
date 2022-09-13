@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-color: rgba(30,30,30, 0.3);
+   
+}   
+
+body::before{
+    content: "";
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    
+    background-image: linear-gradient(115deg ,rgba(0,0,0,0.6), rgba(39, 32, 32, 0.7)) ,url("https://images.unsplash.com/photo-1546792913-cfec613d2163?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter:blur(1.2px);
+    z-index: -1;
+
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+body>img {
+    margin: 0 10px;
+}
+
+img {
+    max-height: 250px;
+}
+
+.container label {
+    color: #fcfcfc;
+    font-size: 1rem;
+}
+.input-filmes{
+    display: inline-block;
+    width: 30%;
+    padding: 0.5em 1.5em;
+    border: 0.7px solid #efefef;
+    border-radius: 5px;
+    background:rgba(30,30,30, 0.3);
+
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+    color: #fcfcfc;
+    font-size: 1em;
+}
+
+.input-filmes::placeholder{
+    color: #fcfcfc;
+    font-size: 1em;
+}
+
+.add-filme {
+    padding: 0.5em 1.5em;
+    color: #efefef;
+    border-radius: 5px;
+    background: rgba(30,30,30,0.3);
+    font-size: 1em;
+    border: 1px solid #efefef;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    margin-left: 0;
+}
+
+.add-filme:hover{
+    box-shadow: -1px -1px 3px rgba(250, 250, 250, 1), 1px 1px 3px rgba(250, 250, 250, 1);
+    text-shadow: 0.5px 0.5px 1px rgba(250, 250, 250, 1);
+    background: rgba(250, 250, 250,0.2);
+    transition: 0.1s all linear;
+}
