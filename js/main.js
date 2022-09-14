@@ -9,8 +9,12 @@ function filmeTaNaLista(posterFilme) {
     const linkRepetido = document.querySelector('.link-repetido');
     for (let i = 0; i < listaFilmes.length; i++) {
         if (posterFilme == listaFilmes[i]) {
-            linkRepetido.innerHTML = `Ops! Esse Filme já foi adicionado a lista`
+            linkRepetido.innerHTML = `Ops! Esse Filme já foi adicionado a lista.`
             return true;
+        }
+        if(posterFilme == ''){
+            linkRepetido.innerHTML = `Ops! Parece que não existe um link aqui não é mesmo.`
+            return true;  
         }
     }
     linkRepetido.innerHTML ='';
